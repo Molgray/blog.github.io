@@ -1,0 +1,237 @@
+/* TO GET AN IDEA OF THE CSS YOU WILL LIKELY BE USING, SEE THE LISTS BELOW. */
+
+        /* 
+        
+        Spacing 
+
+            - padding (shorthand and/or specific properties like padding-bottom, etc.)
+
+            - margin, (shorthand and/or specific properties like margin-top, etc.)
+
+            - letter-spacing, word-spacing, line-height
+
+            - width, max-width, min-width
+            - height, max-height, min-height
+
+        Typography 
+
+            - font-family, font-size, font-style, font-weight
+
+            - text-decoration, text-align
+
+            - color
+
+            - text-shadow, text-transform
+
+        Box, Layout and Border 
+
+            - border (shorthand and/or specific properties like border-top, border-bottom-radius, border-width, etc.)
+
+            - box-shadow
+
+            - display, float, align-items, align-content
+
+            - grid-template-columns, grid-column-gap
+
+            - transform
+
+        Other
+
+            - :nth()-child (to target specific child elements)
+
+            - :focus, :hover, :active (to target link states)
+
+            - @font-face or @import (to import typefaces)
+
+        */
+
+
+/* ------ START WRITING YOUR CODE BELOW ------ */
+
+/* General setup */
+
+
+html {
+    font-size:16px;
+}
+
+body {
+    margin: 1.5rem auto;
+    width:95%;
+    min-width:56.25rem;
+    
+}
+header{
+    letter-spacing: 0.125;
+    font-family:lato, sans-serif;
+    padding: 1.5rem;
+    word-spacing: .5;
+}
+.highlight{
+    text-transform: uppercase;
+    background-color: #33658A;
+    color: white;
+}
+h1{
+    font-size: 3.75rem;
+    margin: 1.125px;
+    text-align: center;
+
+}
+h2{
+    font-size: 2rem;
+}
+h3{
+    font-size: 1.5rem;
+    margin-left: 10px;
+}
+nav {
+    border-top: .125rem solid #33658A;
+    border-bottom: .125rem solid #33658A;
+    background-color: #33658A;
+    padding: 1rem;
+    color: white;
+}
+nav a{
+  
+    width:100%;
+    display:inline;
+    text-align:center;
+    font-size:1.5rem;
+    margin-bottom:1.5rem;
+    margin-top:0.25rem;
+    padding: 1.5rem;
+    color: white;
+    text-decoration: none;
+}
+nav a:focus{
+    color: rgb(18, 156, 48);
+    text-decoration: none;
+   
+}
+nav a:hover{
+    color: black;
+    text-decoration: none;
+    
+}
+nav a:active{
+    color: #e62929;
+    text-decoration: none;
+    
+}
+/* Layout */
+
+main {
+    overflow:auto;
+    min-width:45rem;
+    
+}
+
+.main-section{
+    display: flex;
+    min-width: 22.5rem;
+    width:100%;
+}
+.main-section article{
+    flex: 3;
+    border-right: .125rem solid #33658A;
+}
+.main-section aside {
+  flex: 1;
+}
+
+aside p{
+    border-bottom: .1rem solid #33658A;
+}
+article figure img{
+    float: left;
+    width: 25%;
+    padding: 20px;
+    margin: 0;
+}
+article p {
+    font-size: 22px;
+    margin-top: 20px;
+    
+}
+article{
+    display: inline-block;
+}
+p{
+    margin-left: 10px;
+    padding-left: 10px;
+}
+.subsection figure{
+    width: 100%;
+}
+
+button{
+    float: right;
+    padding: 1rem;
+    width: 30%;
+    margin-right: 20px;
+    background-color:#33658A ;
+    color: white;
+    border-radius: 13px;
+    border-color: #33658A;
+    font-size: 1.5rem;
+}
+aside{
+    padding: 20px;
+}
+aside img{
+    width: 60%;
+}
+
+footer {
+    clear: both;
+    margin-top:6rem;
+}
+.copyright{
+    float: left;
+}
+footer p{
+    float: right;
+}
+footer a {
+    text-decoration: none;
+}
+
+
+
+/* header and footer */
+
+
+
+
+@font-face {
+    font-family:lato;
+    src: url(../fonts/sans-serif/lato-regular.ttf) format('truetype');
+    font-style:normal;
+    font-weight:normal;
+}
+@font-face {
+    font-family:montserrat;
+    src: url(../fonts/montserrat-regular.ttf) format('truetype');
+    font-style:normal;
+    font-weight:normal;
+}
+
+
+
+
+
+
+/* Link Styling */
+
+
+
+
+footer{
+    text-align:center;
+}
+
+
+
+
+
